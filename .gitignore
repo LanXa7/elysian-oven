@@ -1,4 +1,6 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# IDEA
+/.idea
 
 # dependencies
 /node_modules
@@ -40,3 +42,5 @@ yarn-error.log*
 **/*.log
 package-lock.json
 **/*.bun
+
+/.env
