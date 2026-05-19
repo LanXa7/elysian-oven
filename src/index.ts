@@ -1,7 +1,10 @@
 import { Elysia } from "elysia";
+import openapi from "@elysia/openapi";
+import { authController } from "./auth";
+import { userController } from "./user";
 
-const app = new Elysia().get("/", () => "Hello Elysia").listen(3000);
-
-console.log(
-  `🦊 Elysia is running at ${app.server?.hostname}:${app.server?.port}`
-);
+const app = new Elysia()
+    .use(openapi())
+    .use(authController)
+    .use(userController)
+    .listen(3000);

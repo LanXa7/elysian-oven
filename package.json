@@ -6,10 +6,20 @@
     "dev": "bun run --watch src/index.ts"
   },
   "dependencies": {
-    "elysia": "latest"
+    "@elysia/jwt": "^1.4.2",
+    "@elysia/openapi": "^1.4.15",
+    "@timondev/snowflakes": "^1.0.4",
+    "arktype": "^2.2.0",
+    "dotenv": "^17.4.2",
+    "drizzle-orm": "^1.0.0-beta.22",
+    "elysia": "latest",
+    "pg": "^8.21.0"
   },
   "devDependencies": {
-    "bun-types": "latest"
+    "@types/pg": "^8.20.0",
+    "bun-types": "latest",
+    "drizzle-kit": "^1.0.0-beta.22",
+    "tsx": "^4.22.2"
   },
   "module": "src/index.js"
 }
