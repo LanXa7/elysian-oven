@@ -92,7 +92,7 @@ export abstract class AuthService {
             })
         } catch (error) {
             await redis.del(cacheKey)
-            logger.error(error)
+            logger.error({ error }, "发送验证码异常")
             throw error
         }
     }
